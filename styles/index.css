@@ -1,0 +1,17 @@
+#app {
+	padding: 60px !important;
+}
+
+.center {
+	text-align: center;
+}
+
+.top-bottom-left-bradius {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+.top-bottom-right-bradius > input {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
