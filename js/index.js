@@ -12,10 +12,11 @@ class App extends React.Component {
 		this.handleChange = this.handleChange.bind(this);
 		this.reverseString = this.reverseString.bind(this);
 		this.handelKeyPress = this.handelKeyPress.bind(this);
+		this.inputResults = {};
 	}
 
 	reverseString() {
-		this.setState({ result: this.state.input.split('').reverse().join('') });
+		this.setState({ result: this.inputResults[this.state.input] ?? this.state.input.split('').reverse().join('') });
 	}
 
 	handleChange(e) {
